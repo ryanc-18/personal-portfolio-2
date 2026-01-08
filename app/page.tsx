@@ -6,10 +6,10 @@ export default function Home() {
           <div className="text-base text-black">
             RYAN CHIN
           </div>
-          <nav className="flex text-xs gap-10 left-1/2 -translate-x-1/2 absolute">
-            <a href="#about" className="text-black hover:underline">About</a>
-            <a href="#projects" className="text-black hover:underline">Projects</a>
-            <a href="#contact" className="text-black hover:underline">Contact</a>
+          <nav className="flex text-xs gap-15 left-1/2 -translate-x-1/2 absolute rounded-full px-6 py-1 border border-gray-300 bg-gray-100">
+            <a href="#about" className="text-black hover:scale-90 transition-transform duration-200">About</a>
+            <a href="#projects" className="text-black hover:scale-90 transition-transform duration-200">Projects</a>
+            <a href="#contact" className="text-black hover:scale-90 transition-transform duration-200">Contact</a>
           </nav>
         </div>
         <div className="pt-16 px-8">
@@ -17,7 +17,7 @@ export default function Home() {
           <div className="grid grid-cols-5 gap-4 h-[calc(100vh-180px)] mt-4">
             <div className="col-span-3 bg-white rounded-2xl p-4" id="about">
               <p className="text-black text-3xl">About Me</p>
-              <p className="text-black text-1xl mt-7">I am a passionate Software Developer with a knack for building full-stack web applications using modern technologies like <strong>Next.js</strong> and <strong>Tailwind CSS</strong>. My Journey in tech began with a curiosity for solving real-world problems through innovative solutions, which evolved into a love for crafting user-centric digital experiences.</p>
+              <p className="text-black text-sm mt-7">I am a passionate Software Developer with a knack for building full-stack web applications using modern technologies like <strong>Next.js</strong> and <strong>Tailwind CSS</strong>. My Journey in tech began with a curiosity for solving real-world problems through innovative solutions, which evolved into a love for crafting user-centric digital experiences.</p>
               <div className="flex flex-wrap gap-2 mt-2">
                 <span className="px-3 py-1 bg-gray-100 border border-gray-300 text-black rounded-full text-xs font-medium">
                   Full-Stack
@@ -36,7 +36,7 @@ export default function Home() {
                 </span>
               </div>
 
-              <p className="text-black text-1xl mt-7">With growing experience in JavaScript frameworks, I'm focused on building scalable and efficient applications. With a solid foundation in backend development, including experience with <strong>Node.js</strong>, <strong>Express</strong>, <strong>Adonis.js</strong>, I'm now diving deeper into frontend development and full-stack applications with <strong>Next.js</strong>, combining my server-side expertise with modern frontend technologies.</p>
+              <p className="text-black text-sm mt-7">With growing experience in JavaScript frameworks, I'm focused on building scalable and efficient applications. With a solid foundation in backend development, including experience with <strong>Node.js</strong>, <strong>Express</strong>, <strong>Adonis.js</strong>, I'm now diving deeper into frontend development and full-stack applications with <strong>Next.js</strong>, combining my server-side expertise with modern frontend technologies.</p>
               <div className="flex flex-wrap gap-2 mt-2">
                 <span className="px-3 py-1 bg-gray-100 border border-gray-300 text-black rounded-full text-xs font-medium">
                   Node.js
@@ -52,6 +52,21 @@ export default function Home() {
                 </span>
               </div>
 
+              <p className="text-black text-sm mt-7">Beyond coding, I thrive in collaborative environments and enjoy tackling challenging problems with creative solutions, especially as a team. I aim to contribute to impactful projects that make a difference in people's lives.</p>
+              <div className="flex flex-wrap gap-2 mt-2">
+                <span className="px-3 py-1 bg-gray-100 border border-gray-300 text-black rounded-full text-xs font-medium">
+                  Collaboration
+                </span>
+                <span className="px-3 py-1 bg-gray-100 border border-gray-300 text-black rounded-full text-xs font-medium">
+                  Creativity
+                </span>
+                <span className="px-3 py-1 bg-gray-100 border border-gray-300 text-black rounded-full text-xs font-medium">
+                  Problem-Solving
+                </span>
+                <span className="px-3 py-1 bg-gray-100 border border-gray-300 text-black rounded-full text-xs font-medium">
+                  Impact
+                </span>
+              </div>
             </div>
 
             <div className="flex flex-col gap-4 col-span-2" id="projects">
