@@ -1,91 +1,45 @@
+import PageLayout from '@/components/PageLayout';
+import Link from 'next/link';
+
 export default function Home() {
   return (
-    <div className="bg-black min-h-screen p-2 fixed inset-0 overflow-auto">
-      <main className="min-h-full bg-gray-100 rounded-2xl">
-        <div className="fixed py-7 px-11 z-50 flex top-0 left-0 right-0 items-center">
-          <div className="text-base text-black">
-            RYAN CHIN
-          </div>
-          <nav className="flex text-xs gap-15 left-1/2 -translate-x-1/2 absolute rounded-full px-6 py-1 border border-gray-300 bg-gray-100">
-            <a href="#about" className="text-black hover:scale-90 transition-transform duration-200">About</a>
-            <a href="#projects" className="text-black hover:scale-90 transition-transform duration-200">Projects</a>
-            <a href="#contact" className="text-black hover:scale-90 transition-transform duration-200">Contact</a>
-          </nav>
-        </div>
-        <div className="pt-16 px-8">
-          <p className="text-black text-4xl">My Profile</p>
-          <div className="grid grid-cols-5 gap-4 h-[calc(100vh-180px)] mt-4">
-            <div className="col-span-3 bg-white rounded-2xl p-4" id="about">
-              <p className="text-black text-3xl">About Me</p>
-              <p className="text-black text-sm mt-7">I am a passionate Software Developer with a knack for building full-stack web applications using modern technologies like <strong>Next.js</strong> and <strong>Tailwind CSS</strong>. My Journey in tech began with a curiosity for solving real-world problems through innovative solutions, which evolved into a love for crafting user-centric digital experiences.</p>
-              <div className="flex flex-wrap gap-2 mt-2">
-                <span className="px-3 py-1 bg-gray-100 border border-gray-300 text-black rounded-full text-xs font-medium">
-                  Full-Stack
-                </span>
-                <span className="px-3 py-1 bg-gray-100 border border-gray-300 text-black rounded-full text-xs font-medium">
-                  Next.js
-                </span>
-                <span className="px-3 py-1 bg-gray-100 border border-gray-300 text-black rounded-full text-xs font-medium">
-                  Tailwind CSS
-                </span>
-                <span className="px-3 py-1 bg-gray-100 border border-gray-300 text-black rounded-full text-xs font-medium">
-                  Real-World Problems
-                </span>
-                <span className="px-3 py-1 bg-gray-100 border border-gray-300 text-black rounded-full text-xs font-medium">
-                  Innovate
-                </span>
-              </div>
+    <PageLayout>
+      {/* Your fresh home page content goes here */}
+      <div className="pt-10 px-8 pb-8 h-[calc(100vh-16px)] flex items-center justify-center">
+        <div className="text-center">
+          <h1 className="text-6xl font-bold text-black mb-4 typewriter">Ryan Chin</h1>
+          <p
+            className="text-xl text-gray-600 animate-fade-in delay-2000"
+            style={{ animationDelay: '0.2s' }}
+          >
+            Full-Stack Developer
+          </p>
+          <p
+            className="text-md text-gray-500 animate-fade-in delay-4000"
+            style={{ animationDelay: '0.4s' }}
+          >
+            A lifelong learner, always seeking to create impact through code
+          </p>
 
-              <p className="text-black text-sm mt-7">With growing experience in JavaScript frameworks, I'm focused on building scalable and efficient applications. With a solid foundation in backend development, including experience with <strong>Node.js</strong>, <strong>Express</strong>, <strong>Adonis.js</strong>, I'm now diving deeper into frontend development and full-stack applications with <strong>Next.js</strong>, combining my server-side expertise with modern frontend technologies.</p>
-              <div className="flex flex-wrap gap-2 mt-2">
-                <span className="px-3 py-1 bg-gray-100 border border-gray-300 text-black rounded-full text-xs font-medium">
-                  Node.js
-                </span>
-                <span className="px-3 py-1 bg-gray-100 border border-gray-300 text-black rounded-full text-xs font-medium">
-                  Express
-                </span>
-                <span className="px-3 py-1 bg-gray-100 border border-gray-300 text-black rounded-full text-xs font-medium">
-                  Adonis.js
-                </span>
-                <span className="px-3 py-1 bg-gray-100 border border-gray-300 text-black rounded-full text-xs font-medium">
-                  Next.js
-                </span>
-              </div>
-
-              <p className="text-black text-sm mt-7">Beyond coding, I thrive in collaborative environments and enjoy tackling challenging problems with creative solutions, especially as a team. I aim to contribute to impactful projects that make a difference in people's lives.</p>
-              <div className="flex flex-wrap gap-2 mt-2">
-                <span className="px-3 py-1 bg-gray-100 border border-gray-300 text-black rounded-full text-xs font-medium">
-                  Collaboration
-                </span>
-                <span className="px-3 py-1 bg-gray-100 border border-gray-300 text-black rounded-full text-xs font-medium">
-                  Creativity
-                </span>
-                <span className="px-3 py-1 bg-gray-100 border border-gray-300 text-black rounded-full text-xs font-medium">
-                  Problem-Solving
-                </span>
-                <span className="px-3 py-1 bg-gray-100 border border-gray-300 text-black rounded-full text-xs font-medium">
-                  Impact
-                </span>
-              </div>
-            </div>
-
-            <div className="flex flex-col gap-4 col-span-2" id="projects">
-              <div className="bg-white rounded-2xl p-4 flex-1" id="project1">
-                <p>project 1 description</p>
-              </div>
-
-              <div className="bg-white rounded-2xl p-4 flex-1" id="project2">
-                <p>project 2 description</p>
-              </div>
-
-              <div className="bg-white rounded-2xl p-4 flex-1" id="project3">
-                <p>project 3 description</p>
-              </div>
-            </div>
-
+          <div
+            className="flex mt-20 gap-4 justify-center animate-fade-in"
+            style={{ animationDelay: '0.6s' }}
+          >
+            <Link
+              href="/about"
+              className="px-6 py-3 bg-black text-white rounded-lg hover:bg-gray-800 hover:scale-105 transition-all duration-300"
+            >
+              View My Work
+            </Link>
+            <Link
+              href="/contact"
+              className="px-6 py-3 border-2 border-black text-black rounded-lg hover:bg-black hover:text-white hover:scale-105 transition-all duration-300"
+            >
+              Get In Touch
+            </Link>
           </div>
         </div>
-      </main>
-    </div>
+      </div>
+    </PageLayout>
   );
 }
