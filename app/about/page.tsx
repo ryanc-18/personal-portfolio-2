@@ -12,7 +12,7 @@ export default function AboutPage() {
       </div>
       <div className="pt-16 px-8">
         <div className="mt-4">
-          <div className="h-screen p-4">
+          <div className="p-4">
             <FadeInOnScroll delay={200}>
               <p className="text-black text-2xl mt-7 text-center">
                 I am a passionate Software Developer with a knack for building full-stack web
@@ -42,13 +42,59 @@ export default function AboutPage() {
               </p>
             </FadeInOnScroll>
           </div>
-
-          <div className="grid grid-cols-4 gap-8 mt-10 mb-10">
-            <SkillCircle skill="Typescript" percentage={33} color="blue" />
-            <SkillCircle skill="Node.js + Express" percentage={50} color="green" />
-            <SkillCircle skill="Tailwind CSS" percentage={70} color="cyan" />
-            <SkillCircle skill="Next.js" percentage={70} color="blue" />
+          <div className="text-center mt-40">
+            <FadeInOnScroll>
+              <h1 className="text-4xl text-black font-bold typewriter">Skills & Technologies</h1>
+            </FadeInOnScroll>
           </div>
+
+          <div className="grid grid-cols-4 gap-8 mt-40 mb-15">
+            <SkillCircle skill="Typescript" percentage={50} color="blue" />
+            <SkillCircle skill="Node.js + Express" percentage={50} color="green" />
+            <SkillCircle skill="Next.js" percentage={60} color="blue" />
+            <SkillCircle skill="Agile" percentage={60} color="blue" />
+          </div>
+
+          <div className="grid grid-cols-4 gap-8 mt-20 mb-15">
+            <SkillCircle skill="PostgreSQL" percentage={60} color="blue" />
+            <SkillCircle skill="Tailwind CSS" percentage={70} color="cyan" />
+            <SkillCircle skill="Postman" percentage={75} color="green" />
+            <SkillCircle skill="GitHub" percentage={80} color="cyan" />
+          </div>
+
+          {/* <div className="grid grid-cols-3 gap-8 mt-40 mb-40">
+            <div className="col-span-1 bg-white rounded-2xl p-8">
+              <h1 className="text-2xl text-black">Byte of Bread</h1>
+              <p className="text-lg text-black">Backend Developer</p>
+              <ul className="list-disc ml-5">
+                <li className="text-black">Node.js</li>
+                <li className="text-black">Express</li>
+                <li className="text-black">PostgreSQL</li>
+                <li className="text-black">AdonisJS</li>
+                <li className="text-black">
+                  Database Design{' '}
+                  <ul className="list-disc ml-5">
+                    <li>UML Class Diagrams</li>
+                    <li>Schema Design</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div className="col-span-1 bg-white rounded-2xl p-8">
+              <h1 className="text-xl text-black">ITProject</h1>
+              <p className='text-lg text-black'>Backend Developer</p>
+              <p className='text-lg text-black'>Product Owner</p>
+              <ul className="list-disc ml-5">
+                <li className="text-black">Next.js</li>
+                <li className="text-black">PostgreSQL</li>
+                <li className="text-black">Prisma ORM</li>
+                <li className="text-black">Agile Methodologies</li>
+              </ul>
+            </div>
+            <div className="col-span-1 bg-white rounded-2xl p-8">
+              <h1 className="text-xl text-black">MTech</h1>
+            </div>
+          </div> */}
 
           {/* <div className="flex flex-col gap-4 col-span-1">
             <div className="bg-white rounded-2xl p-4 flex-1">
